@@ -17,14 +17,13 @@ jobs:
         with:
           php-version: '8.2'
 
-      - name: Navigate to app directory
-        run: cd app
-
       - name: Install Composer Dependencies
         run: composer install --no-dev --prefer-dist --optimize-autoloader
+        working-directory: app
 
       - name: Generate Application Key
         run: php artisan key:generate
+        working-directory: app
 
       - name: Deploy to Server
         uses: appleboy/scp-action@master

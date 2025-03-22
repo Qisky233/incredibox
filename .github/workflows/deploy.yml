@@ -15,7 +15,10 @@ jobs:
       - name: Setup PHP Environment
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.2'  # 根据你的 Laravel 版本选择合适的 PHP 版本
+          php-version: '8.1'
+
+      - name: Navigate to app directory
+        run: cd app
 
       - name: Install Composer Dependencies
         run: composer install --no-dev --prefer-dist --optimize-autoloader
@@ -26,9 +29,9 @@ jobs:
       - name: Deploy to Server
         uses: appleboy/scp-action@master
         with:
-          host: '47.76.235.53'  # 服务器地址
-          username: 'dev'  # 服务器用户名
-          key: ${{ secrets.DEPLOY_KEY }}  # 服务器 SSH 密钥，存储在 GitHub Secrets 中
-          port: '22'  # 服务器端口，默认为 22
-          source: "app/"  # 本地源目录
-          target: "/www/wwwroot/incredibox"  # 服务器目标目录
+          host: '47.76.235.53'
+          username: 'dev'
+          key: ${{ secrets.DEPLOY_KEY }}
+          port: '22'
+          source: "app/"
+          target: "/www/wwwroot/incredibox"

@@ -34,3 +34,4 @@ jobs:
           port: '22'
           source: "app/"
           target: "/www/wwwroot/incredibox"
+          debug: true

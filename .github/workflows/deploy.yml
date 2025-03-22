@@ -30,5 +30,5 @@ jobs:
           username: 'dev'  # 服务器用户名
           key: ${{ secrets.DEPLOY_KEY }}  # 服务器 SSH 密钥，存储在 GitHub Secrets 中
           port: '22'  # 服务器端口，默认为 22
-          source: "./"  # 本地源目录
+          source: "app/"  # 本地源目录
           target: "/www/wwwroot/incredibox"  # 服务器目标目录

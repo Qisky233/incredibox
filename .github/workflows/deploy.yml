@@ -21,11 +21,9 @@ jobs:
         run: composer install --no-dev --prefer-dist --optimize-autoloader
         working-directory: app
 
-      - name: Copy .env file to root directory
-        run: cp app/.env .
-
       - name: Generate Application Key
         run: php artisan key:generate
+        working-directory: app
 
       - name: Deploy to Server
         uses: appleboy/scp-action@master

@@ -1,0 +1,141 @@
+<?php
+// 获取title参数
+$title = isset($_GET['title']) ? $_GET['title'] : '';
+
+// 解码可能被URL编码的字符
+$title = urldecode($title);
+
+// 将下划线替换为空格
+$title = str_replace('_', ' ', $title);
+
+// 移除可能的.html后缀（如果直接从PATH_INFO获取）
+$title = preg_replace('/\.html$/', '', $title);
+
+// 数据库连接
+function getDb() {
+    $db = new SQLite3(__DIR__ . '/database/db.sqlite'); // 确保路径正确
+    return $db;
+}
+
+// 从数据库中获取匹配的数据
+function getGameData($title) {
+    try {
+        $db = getDb();
+        $stmt = $db->prepare("SELECT * FROM list WHERE title = ?");
+        $stmt->bindValue(1, $title, SQLITE3_TEXT);
+        $result = $stmt->execute();
+        $game = $result->fetchArray(SQLITE3_ASSOC);
+        $db->close();
+        return $game;
+    } catch (Exception $e) {
+        echo '<p>Error fetching game data: ' . $e->getMessage() . '</p>';
+        return null;
+    }
+}
+
+// 获取游戏数据
+$gameData = getGameData($title);
+
+// 如果没有找到匹配的数据，设置默认值
+if (!$gameData) {
+    $gameData = [
+        'title' => 'Game Not Found',
+        'desc' => 'The requested game could not be found.',
+        'url' => 'https://example.com/default-game.html', // 默认游戏链接
+        'info' => 'No information available for this game.'
+    ];
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title><?php echo htmlspecialchars($gameData['title']); ?></title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+<body>
+    <!-- <h1><?php echo htmlspecialchars($gameData['title']); ?></h1> -->
+    <div id="app">
+        <header>
+            <div class="container">
+                <nav>
+                    <a href="/" id="website-name" title="Incredibox Mustard">Incredibox Mustard</a>
+                    <div id="nav-toggle" onclick="toggleMenu()">&#9776;</div>
+                    <div id="nav-menu">
+                        <a href="#" title="Home">Home</a>
+                        <a href="#" title="Sprunki">Sprunki</a>
+                        <a href="#" title="Incredibox">Incredibox</a>
+                        <a href="#" title="Incredibox Mod">Incredibox Mod</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <section>
+                    <div id="game-section">
+                        <div id="game-notice">
+                            <h1><?php echo htmlspecialchars($gameData['title']); ?></h1>
+                            <p><?php echo htmlspecialchars($gameData['desc']); ?></p>
+                        </div>
+                        <div id="game-container">
+                        <!-- <iframe id="game_iframe" src="<?php echo htmlspecialchars($gameData['url']); ?>" allowfullscreen></iframe> -->
+                            <?php echo($gameData['iframe']) ?>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Play Incredibox Mod</h2>
+                    <!-- 游戏列表内容 -->
+                    <div id="game-list">
+                        <?php
+                        // 数据库连接
+                        function getDb2() {
+                            $db = new SQLite3(__DIR__ . '/database/db.sqlite'); // 确保路径正确
+                            return $db;
+                        }
+
+                        // 连接到 SQLite 数据库
+                        try {
+                            $db = getDb2();
+
+                            // 查询数据
+                            $stmt = $db->query("SELECT * FROM list");
+                            while ($game = $stmt->fetchArray(SQLITE3_ASSOC)) { // 使用 fetchArray 获取结果
+                                $encodedTitle = str_replace(' ', '_', $game['title']);
+                                echo '<div>';
+                                // echo '<a href="/game.php?title=' . htmlspecialchars($encodedTitle) . '" target="_blank">';  // urlencode($game['title'])
+                                echo '<a href="' . htmlspecialchars($encodedTitle) . '.html">';
+                                echo '<img src="' . htmlspecialchars($game['coverUrl']) . '" alt="' . htmlspecialchars($game['title']) . '" loading="lazy" title="' . htmlspecialchars($game['title']) . '">';
+                                echo '<p>' . htmlspecialchars($game['title']) . '</p>';
+                                echo '</a>';
+                                echo '</div>';
+                            }
+                        } catch (Exception $e) { // 捕获通用异常
+                            echo '<p>Error fetching games: ' . $e->getMessage() . '</p>';
+                        } finally {
+                            // 关闭数据库连接
+                            $db->close();
+                        }
+                        ?>
+                    </div>
+                </section>
+                <section>
+                    <div id="about-section">
+                        <h2><?php echo htmlspecialchars($gameData['title']); ?></h2>
+                        <!-- <p><?php echo htmlspecialchars($gameData['info']); ?></p> -->
+                        <p><?php echo $gameData['info']; ?></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <p>&copy; 2025 Incredibox Mustard</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

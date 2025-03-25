@@ -1,0 +1,87 @@
+/* 基本重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 头部样式 */
+.app-header {
+    background: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.main-nav {
+    margin-top: 1rem;
+}
+
+.main-nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+/* 主体布局 */
+.container {
+    display: flex;
+    flex: 1;
+}
+
+/* 侧边栏样式 */
+.sidebar {
+    width: 200px;
+    background: #f4f4f4;
+    padding: 1rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.sidebar li {
+    margin-bottom: 0.5rem;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar a:hover {
+    color: #666;
+}
+
+/* 主内容区样式 */
+#main-content {
+    flex: 1;
+    padding: 2rem;
+}
+
+.page-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 活动菜单项样式 */
+.active {
+    font-weight: bold;
+    color: #007bff !important;
+}

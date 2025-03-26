@@ -1,5 +1,5 @@
 <header>
-    <div class="toggle-btn" onclick="parent.toggleSidebar()">☰</div>
+    <div class="toggle-btn" onclick="toggleSidebar()">☰</div>
     <h1>Dashboard</h1>
 </header>
 

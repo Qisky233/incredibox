@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="36a50955-ff03-4224-8e32-4a7270771e44" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="2ueyTU9C3HJo5Bq0sKG1AiYwCtm" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="sqlite" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.formatter.settings.were.checked" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="D:\App\JetBrains\IntelliJ IDEA 2021.2.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\2025\work\work\incredibox\app" />
+      <recent name="E:\2025\work\work\incredibox\app\assets" />
+      <recent name="E:\2025\work\work\incredibox\app\resources\js\components" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="36a50955-ff03-4224-8e32-4a7270771e44" name="Changes" comment="" />
+      <created>1742623341926</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742623341926</updated>
+      <workItem from="1742623343527" duration="959000" />
+      <workItem from="1742624649637" duration="786000" />
+      <workItem from="1742625469910" duration="16175000" />
+      <workItem from="1742721887904" duration="28000" />
+      <workItem from="1742781689698" duration="8720000" />
+      <workItem from="1742895305908" duration="44000" />
+      <workItem from="1742895353066" duration="16000" />
+      <workItem from="1742895380701" duration="207000" />
+    </task>
+    <task id="LOCAL-00001" summary="init framework">
+      <created>1742633392556</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742633392556</updated>
+    </task>
+    <task id="LOCAL-00002" summary="test github action">
+      <created>1742635026260</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1742635026260</updated>
+    </task>
+    <task id="LOCAL-00003" summary="test github action 2">
+      <created>1742635214965</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1742635214965</updated>
+    </task>
+    <task id="LOCAL-00004" summary="test github action 3">
+      <created>1742635697888</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1742635697888</updated>
+    </task>
+    <task id="LOCAL-00005" summary="test github action 4">
+      <created>1742635771038</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1742635771038</updated>
+    </task>
+    <task id="LOCAL-00006" summary="test github action 5">
+      <created>1742635838022</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1742635838022</updated>
+    </task>
+    <task id="LOCAL-00007" summary="test github action 6">
+      <created>1742635955069</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1742635955069</updated>
+    </task>
+    <task id="LOCAL-00008" summary="test github action 7">
+      <created>1742636440256</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1742636440256</updated>
+    </task>
+    <task id="LOCAL-00009" summary="test github action 8">
+      <created>1742636505282</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1742636505282</updated>
+    </task>
+    <task id="LOCAL-00010" summary="test github action 9">
+      <created>1742636644108</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1742636644108</updated>
+    </task>
+    <task id="LOCAL-00011" summary="test github action 10">
+      <created>1742636780491</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1742636780491</updated>
+    </task>
+    <task id="LOCAL-00012" summary="test github action 11">
+      <created>1742637345367</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1742637345367</updated>
+    </task>
+    <task id="LOCAL-00013" summary="test github action 12">
+      <created>1742637539825</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1742637539825</updated>
+    </task>
+    <task id="LOCAL-00014" summary="test github action 13">
+      <created>1742638006099</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1742638006099</updated>
+    </task>
+    <task id="LOCAL-00015" summary="一页30条iframe 推荐 over.">
+      <created>1742643049988</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1742643049988</updated>
+    </task>
+    <task id="LOCAL-00016" summary="action test www 1">
+      <created>1742782468732</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1742782468732</updated>
+    </task>
+    <task id="LOCAL-00017" summary="action test www 2">
+      <created>1742783099587</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1742783099587</updated>
+    </task>
+    <task id="LOCAL-00018" summary="action test www 3">
+      <created>1742783243016</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1742783243016</updated>
+    </task>
+    <task id="LOCAL-00019" summary="清空仓库">
+      <created>1742802445357</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1742802445357</updated>
+    </task>
+    <task id="LOCAL-00020" summary="php 重写 | 用户前端完善、后台SPA未完成">
+      <created>1742895518835</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1742895518835</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="init framework" />
+    <MESSAGE value="test github action" />
+    <MESSAGE value="test github action 2" />
+    <MESSAGE value="test github action 3" />
+    <MESSAGE value="test github action 4" />
+    <MESSAGE value="test github action 5" />
+    <MESSAGE value="test github action 6" />
+    <MESSAGE value="test github action 7" />
+    <MESSAGE value="test github action 8" />
+    <MESSAGE value="test github action 9" />
+    <MESSAGE value="test github action 10" />
+    <MESSAGE value="test github action 11" />
+    <MESSAGE value="test github action 12" />
+    <MESSAGE value="test github action 13" />
+    <MESSAGE value="一页30条iframe 推荐 over." />
+    <MESSAGE value="action test www 1" />
+    <MESSAGE value="action test www 2" />
+    <MESSAGE value="action test www 3" />
+    <MESSAGE value="清空仓库" />
+    <MESSAGE value="php 重写 | 用户前端完善、后台SPA未完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="php 重写 | 用户前端完善、后台SPA未完成" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+</project>

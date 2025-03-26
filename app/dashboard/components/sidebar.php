@@ -4,11 +4,11 @@
             <img src="./assets/avatar.jpg" alt="User Avatar" class="user-avatar">
         </div>
         <ul>
-            <li><a href="/dashboard/page/static.php">Static</a></li>
-            <li><a href="/dashboard/page/article.php">Article</a></li>
-            <li><a href="/dashboard/page/list.php">Game List</a></li>
-            <li><a href="/dashboard/page/add.php">Batch Add</a></li>
-            <li><a href="/dashboard/page/ad.php">Add Ad</a></li>
+            <li><a href="?page=static" data-page="static">Static</a></li>
+            <li><a href="?page=article" data-page="article">Article</a></li>
+            <li><a href="?page=list" data-page="list">Game List</a></li>
+            <li><a href="?page=add" data-page="add">Batch Add</a></li>
+            <li><a href="?page=ad" data-page="ad">Add Ad</a></li>
         </ul>
     </div>
     <div class="logout-section">
@@ -25,7 +25,7 @@
     color: white;
     position: fixed;
     top: 60px;
-    left: 0;
+    left: 0; /* 默认显示 */
     transition: all 0.3s ease;
     overflow-y: auto; /* Enable scrolling if content overflows */
     display: flex;
@@ -33,8 +33,14 @@
     justify-content: space-between; /* Align items to top and bottom */
 }
 
+@media (max-width: 768px) {
+    .sidebar {
+        left: -250px; /* 移动端默认隐藏 */
+    }
+}
+
 .sidebar.active {
-    left: -250px;
+    left: 0; /* 显示时的位置 */
 }
 
 .sidebar ul {
@@ -88,7 +94,6 @@
 
 .logout-button {
     text-decoration: none;
-    color: white;
     display: block;
     padding: 10px;
     border-radius: 5px;
@@ -99,7 +104,10 @@
     transition: background-color 0.3s ease;
 }
 
-.logout-button:hover {
-    background-color: #506d8a;
+.logout-section a {
+    color: #fff;
+}
+.logout-section a:hover {
+    color: #aaa;
 }
 </style>

@@ -14,10 +14,10 @@
                 <a href="/" id="website-name" title="Incredibox Mustard">Incredibox Mustard</a>
                 <div id="nav-toggle" onclick="toggleMenu()">&#9776;</div>
                 <div id="nav-menu">
-                    <a href="#" title="Home">Home</a>
-                    <a href="#" title="Sprunki">Sprunki</a>
-                    <a href="#" title="Incredibox">Incredibox</a>
-                    <a href="#" title="Incredibox Mod">Incredibox Mod</a>
+                    <a href="/" title="Home">Home</a>
+                    <a href="/sort.php" title="Sort">Sort</a>
+                    <a href="/blog.php" title="Blog">Blog</a>
+                    <a href="/about.php" title="About">About</a>
                 </div>
             </nav>
         </div>
@@ -125,6 +125,7 @@
     <footer>
         <div class="container">
             <div class="footer-content">
+                <a href="/privacy.html">privacy</a>
                 <p>&copy; 2025 Incredibox Mustard</p>
             </div>
         </div>

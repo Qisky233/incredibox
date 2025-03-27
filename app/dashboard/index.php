@@ -88,7 +88,6 @@ body {
     transition: margin-left 0.3s ease; /* 添加过渡效果 */
 }
 
-
 #main-content .page-content {
     margin-top: 60px;
     margin-left: 250px;
@@ -104,6 +103,7 @@ body {
     #main-content .page-content {
         margin-top: 60px;
         margin-left: 0;
+        width: 96%;
     }
 }
 </style>

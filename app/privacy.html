@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Incredibox Mustard</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <style>
+        .privacy-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+
+        .privacy-section {
+            margin: 30px 0;
+        }
+
+        .privacy-section h2 {
+            color: #FFD700;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .privacy-list {
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .highlight {
+            color: #FFD700;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/" id="website-name" title="Incredibox Mustard">Incredibox Mustard</a>
+                <div id="nav-toggle" onclick="toggleMenu()">&#9776;</div>
+                <div id="nav-menu">
+                    <a href="/">Home</a>
+                    <a href="/sort.php">Sort</a>
+                    <a href="/blog.php">Blog</a>
+                    <a href="/about.php" class="active">About</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="privacy-container">
+            <h1>Privacy Policy</h1>
+            
+            <section class="privacy-section">
+                <h2>1. Information Collection</h2>
+                <p class="privacy-list">
+                    We collect:
+                    <br>- <span class="highlight">Non-personal data:</span> Browser type, IP address, visited pages
+                    <br>- <span class="highlight">Voluntary data:</span> Email (for newsletters), Usernames
+                </p>
+            </section>
+
+            <section class="privacy-section">
+                <h2>2. Data Usage</h2>
+                <p class="privacy-list">
+                    Your information helps us:
+                    <br>- Improve mod recommendations
+                    <br>- Respond to user inquiries
+                    <br>- Analyze traffic patterns
+                </p>
+            </section>
+
+            <section class="privacy-section">
+                <h2>3. Third-Party Services</h2>
+                <p class="privacy-list">
+                    We use:
+                    <br>- Google Analytics (traffic analysis)
+                    <br>- Cloudflare (security)
+                    <br>- [Your Hosting Provider]
+                </p>
+            </section>
+
+            <section class="privacy-section">
+                <h2>4. User Rights</h2>
+                <p class="privacy-list">
+                    You can:
+                    <br>- Request data access
+                    <br>- Opt-out of tracking
+                    <br>- Delete account data
+                    <br><em>Contact: privacy@incrediboxmustard.com</em>
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p><a href="/privacy.html" style="text-decoration: none;">Privacy</a></p>
+                <p>&copy; 2025 Incredibox Mustard</p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('nav-menu');
+        menu.classList.toggle('active');
+    }
+</script>
+</body>
+</html>

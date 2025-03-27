@@ -1,51 +1,3 @@
-<?php
-// 获取title参数
-$title = isset($_GET['title']) ? $_GET['title'] : '';
-
-// 解码可能被URL编码的字符
-$title = urldecode($title);
-
-// 将下划线替换为空格
-$title = str_replace('_', ' ', $title);
-
-// 移除可能的.html后缀（如果直接从PATH_INFO获取）
-$title = preg_replace('/\.html$/', '', $title);
-
-// 数据库连接
-function getDb() {
-    $db = new SQLite3(__DIR__ . '/database/db.sqlite'); // 确保路径正确
-    return $db;
-}
-
-// 从数据库中获取匹配的数据
-function getGameData($title) {
-    try {
-        $db = getDb();
-        $stmt = $db->prepare("SELECT * FROM list WHERE title = ?");
-        $stmt->bindValue(1, $title, SQLITE3_TEXT);
-        $result = $stmt->execute();
-        $game = $result->fetchArray(SQLITE3_ASSOC);
-        $db->close();
-        return $game;
-    } catch (Exception $e) {
-        echo '<p>Error fetching game data: ' . $e->getMessage() . '</p>';
-        return null;
-    }
-}
-
-// 获取游戏数据
-$gameData = getGameData($title);
-
-// 如果没有找到匹配的数据，设置默认值
-if (!$gameData) {
-    $gameData = [
-        'title' => 'Game Not Found',
-        'desc' => 'The requested game could not be found.',
-        'url' => 'https://example.com/default-game.html', // 默认游戏链接
-        'info' => 'No information available for this game.'
-    ];
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,6 +5,73 @@ if (!$gameData) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/index.css">
+<style>
+/* 新增样式 */
+main .container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.sidebar {
+    width: 200px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    position: sticky;
+    top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.sidebar-title {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+
+.category-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category-item a {
+    display: block;
+    padding: 10px 15px;
+    color: #666;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.category-item.active a {
+    background: #FFD700; /* 芥末黄主题色 */
+    color: #333;
+    font-weight: 500;
+}
+
+.category-item a:hover {
+    background: rgba(255, 215, 0, 0.2);
+}
+
+.main-content {
+    flex: 1;
+}
+
+/* 响应式适配 */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 90%;
+        position: static;
+    }
+}
+</style>
 </head>
 <body>
 <div id="app">
@@ -72,32 +91,29 @@ if (!$gameData) {
     </header>
     <main>
         <div class="container">
-            <section>
-                <div id="game-section">
-                    <div id="game-notice">
-                        <h1><?php echo htmlspecialchars($gameData['title']); ?></h1>
-                        <p><?php echo htmlspecialchars($gameData['desc']); ?></p>
-                    </div>
-                    <div id="game-container">
-                    <!-- <iframe id="game_iframe" src="<?php echo htmlspecialchars($gameData['url']); ?>" allowfullscreen></iframe> -->
-                        <?php echo($gameData['iframe']) ?>
-                    </div>
-                </div>
-            </section>
+            <!-- 新增侧边栏 -->
+            <aside class="sidebar">
+                <h3 class="sidebar-title">Tag</h3>
+                <ul class="category-list">
+                    <li class="category-item active">
+                        <a href="#">Incredibox</a>
+                    </li>
+                </ul>
+            </aside>
             <section>
                 <h2>Play Incredibox Mod</h2>
                 <!-- 游戏列表内容 -->
                 <div id="game-list">
                     <?php
                     // 数据库连接
-                    function getDb2() {
+                    function getDb() {
                         $db = new SQLite3(__DIR__ . '/database/db.sqlite'); // 确保路径正确
                         return $db;
                     }
 
                     // 连接到 SQLite 数据库
                     try {
-                        $db = getDb2();
+                        $db = getDb();
 
                         // 查询数据
                         $stmt = $db->query("SELECT * FROM list");
@@ -118,13 +134,6 @@ if (!$gameData) {
                         $db->close();
                     }
                     ?>
-                </div>
-            </section>
-            <section>
-                <div id="about-section">
-                    <h2><?php echo htmlspecialchars($gameData['title']); ?></h2>
-                    <!-- <p><?php echo htmlspecialchars($gameData['info']); ?></p> -->
-                    <p><?php echo $gameData['info']; ?></p>
                 </div>
             </section>
         </div>

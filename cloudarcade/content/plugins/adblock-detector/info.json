@@ -1,0 +1,13 @@
+{
+	"name": "Adblock Detector",
+	"version": "1.0.0",
+	"author": "CloudArcade",
+	"description": "Detect Adblocker then show warning popup.",
+	"website": "https://cloudarcade.net",
+	"require_version": "1.7.6",
+	"tested_version": "1.7.6",
+	"last_update": "18/10/2023",
+	"type": "plugin",
+	"target": "index",
+	"require_login": false
+}

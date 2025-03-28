@@ -1,0 +1,13 @@
+{
+	"name": "Comments Manager",
+	"version": "1.0.1",
+	"author": "CloudArcade",
+	"description": "Show and manage all user comments.",
+	"website": "https://cloudarcade.net",
+	"require_version": "1.4.5",
+	"tested_version": "1.4.5",
+	"last_update": "19/07/2022",
+	"type": "plugin",
+	"target": "admin",
+	"require_login": true
+}

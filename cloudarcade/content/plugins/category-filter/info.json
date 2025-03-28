@@ -1,0 +1,13 @@
+{
+	"name": "Category Filter",
+	"version": "1.0.0",
+	"author": "CloudArcade",
+	"description": "Change game category when importing games, useful for non-english site.",
+	"website": "https://cloudarcade.net",
+	"require_version": "1.4.5",
+	"tested_version": "1.4.5",
+	"last_update": "19/07/2022",
+	"type": "plugin",
+	"target": "index",
+	"require_login": false
+}

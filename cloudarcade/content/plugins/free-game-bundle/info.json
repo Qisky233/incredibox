@@ -1,0 +1,14 @@
+{
+	"name": "Free Game Bundle",
+	"version": "1.0.2",
+	"author": "CloudArcade",
+	"description": "Free self-hosted games for CloudArcade site.",
+	"website": "https://cloudarcade.net",
+	"require_version": "1.9.2",
+	"tested_version": "1.9.2",
+	"initial_release": "20/01/2024",
+	"last_update": "17/12/2024",
+	"type": "plugin",
+	"target": "admin",
+	"require_login": true
+}

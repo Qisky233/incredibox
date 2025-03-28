@@ -1,0 +1,13 @@
+{
+	"name": "Static Site",
+	"version": "1.0.0",
+	"author": "CloudArcade",
+	"description": "Make your CloudArcade site extremely fast with Static Site.",
+	"website": "https://cloudarcade.net",
+	"require_version": "1.4.3",
+	"tested_version": "1.4.3",
+	"last_update": "18/05/2022",
+	"type": "plugin",
+	"target": "admin",
+	"require_login": true
+}

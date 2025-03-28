@@ -1,0 +1,13 @@
+{
+	"name": "Thumbnail Importer",
+	"version": "1.0.9",
+	"author": "CloudArcade",
+	"description": "Import and download all external thumbnails to stored locally.",
+	"website": "https://cloudarcade.net",
+	"require_version": "1.7.1",
+	"tested_version": "1.7.1",
+	"last_update": "07/11/2023",
+	"type": "plugin",
+	"target": "admin",
+	"require_login": true
+}

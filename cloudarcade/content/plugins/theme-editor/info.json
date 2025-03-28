@@ -1,0 +1,13 @@
+{
+	"name": "Theme Editor",
+	"version": "1.0.2",
+	"author": "CloudArcade",
+	"description": "Edit current theme code directly without FTP.",
+	"website": "https://cloudarcade.net",
+	"require_version": "1.6.3",
+	"tested_version": "1.6.3",
+	"last_update": "18/09/2023",
+	"type": "plugin",
+	"target": "admin",
+	"require_login": true
+}

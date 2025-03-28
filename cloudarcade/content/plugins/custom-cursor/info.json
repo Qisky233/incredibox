@@ -1,0 +1,14 @@
+{
+    "name": "Custom Cursor",
+    "version": "1.0.0",
+    "author": "CloudArcade",
+    "description": "Customize your website's cursor with different styles",
+    "website": "https://cloudarcade.net",
+    "require_version": "1.9.2",
+    "tested_version": "1.9.2",
+    "initial_release": "02/12/2024",
+    "last_update": "02/12/2024",
+    "type": "plugin",
+    "target": "index",
+    "require_login": false
+}

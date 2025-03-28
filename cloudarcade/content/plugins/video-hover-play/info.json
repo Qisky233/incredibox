@@ -1,0 +1,15 @@
+{
+	"name": "Video Hover Play",
+	"version": "1.0.4",
+	"author": "CloudArcade",
+	"description": "A plugin that plays game preview videos when hovering over thumbnails, enhancing user interaction and experience.",
+	"website": "https://cloudarcade.net",
+	"documentation": "https://cloudarcade.net/tutorial/video-hover-play-plugin/",
+	"require_version": "1.9.2",
+	"tested_version": "1.9.2",
+	"initial_release": "26/09/2024",
+	"last_update": "28/01/2025",
+	"type": "plugin",
+	"target": "index",
+	"require_login": true
+}

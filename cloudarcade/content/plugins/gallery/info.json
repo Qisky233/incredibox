@@ -1,0 +1,13 @@
+{
+	"name": "Gallery",
+	"version": "1.0.1",
+	"author": "CloudArcade",
+	"description": "Manage image files on your site",
+	"website": "https://cloudarcade.net",
+	"require_version": "1.6.5",
+	"tested_version": "1.6.5",
+	"last_update": "26/08/2023",
+	"type": "plugin",
+	"target": "admin",
+	"require_login": true
+}

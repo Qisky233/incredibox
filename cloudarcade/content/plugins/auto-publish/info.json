@@ -1,0 +1,13 @@
+{
+	"name": "Auto Publish",
+	"version": "1.0.4",
+	"author": "CloudArcade",
+	"description": "Auto publish game from distibutors.",
+	"website": "https://cloudarcade.net",
+	"require_version": "1.9.9",
+	"tested_version": "1.9.9",
+	"last_update": "19/01/2025",
+	"type": "plugin",
+	"target": "index",
+	"require_login": false
+}

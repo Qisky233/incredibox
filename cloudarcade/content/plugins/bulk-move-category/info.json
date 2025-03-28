@@ -1,0 +1,13 @@
+{
+	"name": "Bulk Move Category",
+	"version": "1.0.2",
+	"author": "CloudArcade",
+	"description": "Quicker way to bulk move games to another category.",
+	"website": "https://cloudarcade.net",
+	"require_version": "1.3.7",
+	"tested_version": "1.4.4",
+	"last_update": "16/02/2024",
+	"type": "plugin",
+	"target": "admin",
+	"require_login": true
+}

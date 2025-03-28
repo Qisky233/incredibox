@@ -1,0 +1,13 @@
+{
+	"name": "Login History",
+	"version": "1.0.0",
+	"author": "RedFoc",
+	"description": "Show login history. List of who tried or succeeded logging in to your admin dashboard.",
+	"website": "https://redfoc.com",
+	"require_version": "1.2.0",
+	"tested_version": "1.2.0",
+	"last_update": "12/01/2021",
+	"type": "plugin",
+	"target": "admin",
+	"require_login": true
+}

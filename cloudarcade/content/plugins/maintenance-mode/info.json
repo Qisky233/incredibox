@@ -1,0 +1,14 @@
+{
+    "name": "Maintenance Mode",
+    "version": "1.0.1",
+    "author": "CloudArcade",
+    "description": "Easily put your site into maintenance mode with a fully customizable maintenance page. Features admin preview and HTML template customization.",
+    "website": "https://cloudarcade.net",
+    "require_version": "1.9.5",
+    "tested_version": "1.9.5",
+    "initial_release": "30/11/2024",
+    "last_update": "30/11/2024",
+    "type": "plugin",
+    "target": "index",
+    "require_login": true
+}

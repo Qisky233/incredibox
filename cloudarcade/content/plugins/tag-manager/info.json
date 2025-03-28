@@ -1,0 +1,14 @@
+{
+	"name": "Tag Manager",
+	"version": "1.0.2",
+	"author": "CloudArcade",
+	"description": "Manage game tags.",
+	"website": "https://cloudarcade.net",
+	"require_version": "1.7.6",
+	"tested_version": "1.7.6",
+	"initial_release": "10/04/2023",
+	"last_update": "17/10/2023",
+	"type": "plugin",
+	"target": "admin",
+	"require_login": false
+}

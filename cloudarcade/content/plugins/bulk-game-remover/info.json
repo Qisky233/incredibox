@@ -1,0 +1,13 @@
+{
+	"name": "Bulk Game Remover",
+	"version": "1.0.0",
+	"author": "CloudArcade",
+	"description": "Bulk remove games, you can multi select games you want to remove.",
+	"website": "https://cloudarcade.net",
+	"require_version": "1.1.9",
+	"tested_version": "1.1.9",
+	"last_update": "10/01/2021",
+	"type": "plugin",
+	"target": "admin",
+	"require_login": true
+}

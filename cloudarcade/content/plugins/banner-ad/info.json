@@ -1,0 +1,14 @@
+{
+	"name": "Banner Ad",
+	"version": "1.0.2",
+	"author": "CloudArcade",
+	"description": "A plugin to manage JavaScript ad scripts and banner displays, designed to work on shared hosting with JavaScript restrictions.",
+	"website": "https://cloudarcade.net",
+	"require_version": "2.0.0",
+	"tested_version": "2.0.0",
+	"initial_release": "02/03/2025",
+	"last_update": "02/03/2025",
+	"type": "plugin",
+	"target": "index",
+	"require_login": true
+}

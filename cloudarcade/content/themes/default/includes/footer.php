@@ -1,4 +1,4 @@
-	<footer class="footer text-center">
+	<!-- <footer class="footer text-center">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4 mb-5 mb-lg-0">
@@ -12,9 +12,13 @@
 				</div>
 			</div>
 		</div>
-	</footer>
+	</footer> -->
 	<div class="copyright py-4 text-center text-white">
 		<div class="container">
+			<p>
+				<a href="<?php echo DOMAIN; ?>privacy" class="text-white">Privacy</a> | 
+				<a href="<?php echo DOMAIN; ?>sitemap.xml" class="text-white">SiteMap</a>
+			</p>
 			<?php
 			if(isset($stored_widgets['footer-copyright'])){
 				widget_aside('footer-copyright');

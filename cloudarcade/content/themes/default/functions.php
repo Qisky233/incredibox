@@ -1,4 +1,21 @@
 <?php
+if(!function_exists('esc_attr')) {
+    function esc_attr($text) {
+        return htmlspecialchars($text, ENT_QUOTES, 'UTF-8');
+    }
+}
+
+function list_categories_sidebar() {
+    $categories = fetch_all_categories();
+	echo '<ul class="category-list">';
+	foreach ($categories as $item) {
+        echo '<li><a href="javascript:void(0)" 
+              data-slug="'.esc_string($item->slug).'" 
+              class="load-category">'. 
+              esc_string($item->name).'</a></li>';
+    }
+	echo '</ul>';
+}
 
 function list_categories(){
 	$categories = fetch_all_categories();

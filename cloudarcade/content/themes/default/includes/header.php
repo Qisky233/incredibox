@@ -48,8 +48,3 @@
 				<?php show_user_profile_header() ?>
 			</div>
 		</nav>
-		<div class="nav-categories">
-			<div class="container">
-				<?php include  TEMPLATE_PATH . "/parts/navigation-categories.php" ?>
-			</div>
-		</div>

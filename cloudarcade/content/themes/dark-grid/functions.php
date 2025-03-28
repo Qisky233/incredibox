@@ -1,5 +1,26 @@
 <?php
 
+
+function list_categories_sidebar() {
+    // $categories = fetch_all_categories();
+    // echo '<div class="sidebar-categories">';
+    // echo '<h3>'.__('游戏分类').'</h3>';
+    // echo '<ul class="category-list">';
+    // foreach ($categories as $item) {
+    //     echo '<li><a href="javascript:void(0)" 
+    //           data-category-id="'.$item->id.'"
+    //           onclick="loadCategoryGames('.$item->id.')">'. 
+    //           esc_string($item->name) .'</a></li>';
+    // }
+    // echo '</ul></div>';
+	$categories = fetch_all_categories();
+	echo '<ul class="links list-categories">';
+	foreach ($categories as $item) {
+		echo '<a href="'. get_permalink('category', $item->slug) .'"><li>'. esc_string($item->name) .'</li></a>';
+	}
+	echo '</ul>';
+}
+
 function list_categories(){
 	$categories = fetch_all_categories();
 	echo '<ul class="links list-categories">';
@@ -215,5 +236,4 @@ register_widget( 'widget_game_list' );
 if(file_exists(ABSPATH . TEMPLATE_PATH . '/includes/custom.php')){
 	include(ABSPATH . TEMPLATE_PATH . '/includes/custom.php');
 }
-
 ?>
